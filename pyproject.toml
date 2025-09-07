@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sshmmanager"
-version = "0.1.1"
+version = "0.1.2"
 description = "simple ssh manager inspired by zoxide"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -25,7 +25,8 @@ dependencies = [
     "shellingham==1.5.4",
     "SQLAlchemy==2.0.43",
     "typer==0.17.3",
-    "typing_extensions==4.15.0"
+    "typing_extensions==4.15.0",
+    "platformdirs==4.4.0"
 ]
 
 [project.scripts]

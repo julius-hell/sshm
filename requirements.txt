@@ -4,6 +4,7 @@ fuzzyfinder==2.3.0
 markdown-it-py==4.0.0
 mdurl==0.1.2
 packaging==25.0
+platformdirs==4.4.0
 Pygments==2.19.2
 pyproject_hooks==1.2.0
 rich==14.1.0

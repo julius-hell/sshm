@@ -2,7 +2,7 @@ from sqlalchemy.ext.mutable import MutableList
 from sqlalchemy import JSON, create_engine
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from typing import List
-
+from platformdirs import user_data_dir
 class Base(DeclarativeBase):
     pass
 
@@ -16,5 +16,6 @@ class Connection(Base):
         nullable=False,
     )
 
-engine = create_engine("sqlite:///data.sqlite3", echo=False)
+db_path = user_data_dir(appname="sshm", ensure_exists=True) + "/data.sqlite"
+engine = create_engine("sqlite:///" + db_path, echo=False)
 Base.metadata.create_all(engine)
