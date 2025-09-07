@@ -4,7 +4,7 @@ A Python CLI tool for managing SSH hosts and connections, backed by a SQLite dat
 
 ## Features
 - Add, list, update, and remove SSH hosts
-- Store connection details securely
+- Store connection details
 - Simple command-line interface
 
 ## Installation
