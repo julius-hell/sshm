@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sshmmanager"
-version = "0.1.2"
+version = "0.1.3"
 description = "simple ssh manager inspired by zoxide"
 readme = "README.md"
 requires-python = ">=3.9"
